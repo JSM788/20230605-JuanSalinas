@@ -1,0 +1,36 @@
+git init
+touch README.md
+git branch -M main
+touch comandos.txt main.js index.html
+git add .
+git commit -m "commit 01 Juan Salinas"
+git remote add origin git@github.com:JSM788/20230605-JuanSalinas.git
+git push -u origin main
+git branch feature
+git checkout feature
+mkdir Hardware Software SeguridadInformatica
+ls
+cd Hardware/
+touch resumen.txt
+cd ..
+cd SeguridadInformatica/
+touch resumen.txt
+cd ..
+cd Software/
+touch resumen.txt
+cd ..
+git branch
+ls
+git add Hardware/ SeguridadInformatica/ Software/
+git commit -m "commit 02 de JuanSalinas"
+git push
+git push --set-upstream origin feature
+git checkout main
+git branch
+ls
+mv main.js resumenHardware.txt
+mv index.html resumenSoftware.txt
+ls
+git add .
+git commit -m "commit 03 de JuanSalinas"
+git push
